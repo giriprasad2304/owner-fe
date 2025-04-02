@@ -1,7 +1,7 @@
 // Fetch and display orders
 async function fetchOrders() {
     try {
-        const response = await fetch('http://localhost:3005/api/orders');
+        const response = await fetch('https://owner-be.onrender.com/api/orders');
         const orders = await response.json();
         console.log('Orders fetched:', orders); // Debugging log
 
@@ -50,7 +50,7 @@ async function fetchOrders() {
 // Delete an order by phone number
 async function deleteOrder(phone) {
     try {
-        const response = await fetch('http://localhost:3005/api/orders', {
+        const response = await fetch('https://owner-be.onrender.com/api/orders', {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',
@@ -72,7 +72,7 @@ async function deleteOrder(phone) {
 // Fetch categories and populate the category dropdown
 async function fetchCategories() {
     try {
-        const response = await fetch('http://localhost:3005/api/menu/categories');
+        const response = await fetch('https://owner-be.onrender.com/api/menu/categories');
         const categories = await response.json();
 
         const categoryDropdown = document.getElementById('category');
@@ -118,7 +118,7 @@ document.getElementById('update-quantity-form').addEventListener('submit', async
     const newQuantity = parseInt(document.getElementById('newQuantity').value);
 
     try {
-        const response = await fetch('http://localhost:3005/api/menu/update-quantity', {
+        const response = await fetch('https://owner-be.onrender.com/api/menu/update-quantity', {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',
@@ -158,7 +158,7 @@ document.getElementById('add-item-form').addEventListener('submit', async (event
     const quantity = parseInt(document.getElementById('newQuantity').value);
 
     try {
-        const response = await fetch('http://localhost:3005/api/menu/add-item', {
+        const response = await fetch('https://owner-be.onrender.com/api/menu/add-item', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

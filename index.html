@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canteen</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="orders_container">
+        <p>Today's Orders</p>
+        <div id="orders" class="no-orders"></div>
+    </div>
+   
+    <div class="orders_container">
+        <p>Update Item Quantity</p>
+        <form id="update-quantity-form">
+            <label for="category">Category:</label>
+            <select id="category" name="category" required>
+                <option value="" disabled selected>Select a category</option>
+            </select>
+            <label for="itemName">Item Name:</label>
+            <select id="itemName" name="itemName" required>
+                <option value="" disabled selected>Select an item</option>
+            </select>
+            <label for="newQuantity">New Quantity:</label>
+            <input type="number" id="newQuantity" name="newQuantity" required>
+            <button type="submit">Update Quantity</button>
+        </form>
+        <p id="update-message"></p>
+    </div>
+
+    <div class="orders_container">
+        <p>Add New Item</p>
+        <form id="add-item-form">
+            <label for="newCategory">Category:</label>
+            <input type="text" id="newCategory" name="newCategory" placeholder="Enter category" required>
+            
+            <label for="newItemName">Item Name:</label>
+            <input type="text" id="newItemName" name="newItemName" placeholder="Enter item name" required>
+            
+            <label for="newPrice">Price:</label>
+            <input type="text" id="newPrice" name="newPrice" placeholder="Enter price" required>
+            
+            <label for="newImage">Image URL:</label>
+            <input type="text" id="newImage" name="newImage" placeholder="Enter image URL" required>
+            
+            <label for="newQuantity">Quantity:</label>
+            <input type="number" id="newQuantity" name="newQuantity" placeholder="Enter quantity" required>
+            
+            <button type="submit">Add Item</button>
+        </form>
+        <p id="add-item-message"></p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

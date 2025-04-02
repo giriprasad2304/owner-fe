@@ -1,0 +1,212 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9; /* Light gray background */
+    color: #333; /* Dark gray text */
+    margin: 0;
+    padding: 0;
+    background-image: url(bg2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.orders_container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff; /* White background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    opacity: 0.8;
+}
+
+.orders_container p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #555; /* Medium gray */
+    opacity: 1;
+}
+
+.order-item {
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #f9f9fc; /* Slightly off-white */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.order-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Hover effect */
+}
+
+.order-item p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #444; /* Medium-dark gray */
+}
+
+.delete-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ff6b6b; /* Soft red */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.delete-btn:hover {
+    background-color: #ff4c4c; /* Darker red on hover */
+}
+
+.no-orders {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #777; /* Light gray */
+    margin-top: 20px;
+}
+
+/* Style for the update section container */
+#update-quantity-form {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff; /* White background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    opacity: 0.9;
+}
+
+/* Style for the form labels */
+#update-quantity-form label {
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555; /* Medium gray */
+}
+
+/* Style for the dropdowns and input fields */
+#update-quantity-form select,
+#update-quantity-form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #f9f9fc; /* Slightly off-white */
+    color: #333; /* Dark gray text */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle inset shadow */
+    transition: border-color 0.3s;
+}
+
+/* Focus effect for dropdowns and input fields */
+#update-quantity-form select:focus,
+#update-quantity-form input[type="number"]:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none;
+}
+
+/* Style for the submit button */
+#update-quantity-form button {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #28a745; /* Green background */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for the submit button */
+#update-quantity-form button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Style for the update message */
+#update-message {
+    margin-top: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    color: #28a745; /* Green text for success */
+}
+
+/* Style for the add item form container */
+#add-item-form {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff; /* White background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    opacity: 0.9;
+}
+
+/* Style for the form labels */
+#add-item-form label {
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555; /* Medium gray */
+}
+
+/* Style for the input fields */
+#add-item-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #f9f9fc; /* Slightly off-white */
+    color: #333; /* Dark gray text */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle inset shadow */
+    transition: border-color 0.3s;
+}
+
+/* Focus effect for input fields */
+#add-item-form input:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none;
+}
+
+/* Style for the submit button */
+#add-item-form button {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff; /* Blue background */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for the submit button */
+#add-item-form button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Style for the add item message */
+#add-item-message {
+    margin-top: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
